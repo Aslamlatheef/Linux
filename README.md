@@ -1,7 +1,7 @@
 # Linux
 
 ## Disk Space Issues
-#### du -shxu --exclude /proc
+#### du -shxc --exclude /proc
 #### Disk Space issue
 1. Command du 
 2. Using “-h” option with “du” command provides results in “Human Readable Format“. Means you can see sizes in Bytes, Kilobytes, Megabytes, Gigabytes etc.
