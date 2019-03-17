@@ -1,6 +1,21 @@
 # Linux
 
 ## Disk Space Issues
+
+#### How to add Firewall rule in Linux
+
+
+
+
+
+
+
+
+
+
+
+
+
 #### du -shxc --exclude /proc
 #### Disk Space issue
 1. Command du 
