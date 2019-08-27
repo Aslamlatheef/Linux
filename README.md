@@ -1,5 +1,7 @@
 # Linux
 
+## SELINUX SETUP
+
 ### CHECKING SELINUX status in LINUX
 
 ```sestatus```
