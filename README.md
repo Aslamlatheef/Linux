@@ -70,10 +70,15 @@ How to Enable Promiscuous Mode
  
 
 Network Configuration File 
-	
-RedhaT/CENTOS      ``` /etc/sysconfig/network-scripts/ifcfg-eth0 ```
 
-Ubuntu / DEBIAN    ``` sudo vi /etc/network/interfaces ```
+	
+RedhaT/CENTOS      
+
+	``` /etc/sysconfig/network-scripts/ifcfg-eth0 ```
+
+Ubuntu / DEBIAN    
+
+	``` sudo vi /etc/network/interfaces ```
 
 ## SELINUX SETUP
 
@@ -120,13 +125,16 @@ Then change the directive ```SELinux=enforcing``` to ```SELinux=disabled```
 10. Display the disk usage based on modification of time, use the flag “–time” as shown below.
 
 
-# Ulimit command - Setting limits with Ulimit command
+## Ulimit command - Setting limits with Ulimit command
+
 $ ulimit -c ulimited
 $ ulimit -c
 unlimited
 
 $ ulimit -u 100
+
 -bash: ulimit: max user processes: cannot modify limit: Operation not permitted
+
 -a     All current limits are reported
 
 -c     The maximum size of core files created
