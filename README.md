@@ -2,37 +2,69 @@
 
 ## NETWORK CONFIGURATION
 
-to check IP Address  VIEW all NETWORK SETTINGS ```ifconfig```
+to check IP Address  VIEW all NETWORK SETTINGS 
+	
+	```ifconfig```
 
-Display Information of All Network Interfaces ```ifconfig -a```
+Display Information of All Network Interfaces 
 
-View Network Settings of Specific Interface ```ifconfig eth0```
+	```ifconfig -a```
 
-How to Enable an Network Interface ```ifconfig eth0 up``` ```ifup eth0```
+View Network Settings of Specific Interface 
 
-How to Disable an Network Interface ```ifconfig eth0 down``` ```ifdown eth0```
+	```ifconfig eth0```
 
-How to Assign a IP Address to Network Interface ```ifconfig eth0 172.16.25.125```
+How to Enable an Network Interface 
 
-How to Assign a Netmask to Network Interface ```ifconfig eth0 netmask 255.255.255.224```
+	```ifconfig eth0 up``` ```ifup eth0```
 
-How to Assign a Broadcast to Network Interface ```ifconfig eth0 netmask 255.255.255.224```
+How to Disable an Network Interface 
 
-How to Assign a Broadcast to Network Interface ```ifconfig eth0 broadcast 172.16.25.63```
+	```ifconfig eth0 down``` ```ifdown eth0```
 
-How to Assign a IP, Netmask and Broadcast to Network Interface ```ifconfig eth0 172.16.25.125 netmask 255.255.255.224 broadcast 172.16.25.63```
+How to Assign a IP Address to Network Interface 
+	
+	```ifconfig eth0 172.16.25.125```
 
-How to Change MTU for an Network Interface ```ifconfig eth0 mtu 1000 ```
+How to Assign a Netmask to Network Interface 
 
-How to Enable Promiscuous Mode ```ifconfig eth0 promisc```
+	```ifconfig eth0 netmask 255.255.255.224```
 
- How to Disable Promiscuous Mode ```ifconfig eth0 -promisc```
+How to Assign a Broadcast to Network Interface 
+
+	```ifconfig eth0 netmask 255.255.255.224```
+
+How to Assign a Broadcast to Network Interface 
+
+	```ifconfig eth0 broadcast 172.16.25.63```
+
+How to Assign a IP, Netmask and Broadcast to Network Interface 
+
+	```ifconfig eth0 172.16.25.125 netmask 255.255.255.224 broadcast 172.16.25.63```
+
+How to Change MTU for an Network Interface 
+
+	```ifconfig eth0 mtu 1000 ```
+
+How to Enable Promiscuous Mode 
+
+	```ifconfig eth0 promisc```
+
+ How to Disable Promiscuous Mode 
  
- How to Add New Alias to Network Interface ```ifconfig eth0:0 172.16.25.127 ``` verify with ```ifconfig eth0:0```
+ 	```ifconfig eth0 -promisc```
  
- How to Remove Alias to Network Interface ```ifconfig eth0:0 down```
+ How to Add New Alias to Network Interface 
  
- How to Change the MAC address of Network Interface ```ifconfig eth0 hw ether AA:BB:CC:DD:EE:FF```
+ 	```ifconfig eth0:0 172.16.25.127 ``` verify with ```ifconfig eth0:0```
+ 
+ How to Remove Alias to Network Interface 
+ 
+ 	```ifconfig eth0:0 down```
+ 
+ How to Change the MAC address of Network Interface 
+ 
+ 	```ifconfig eth0 hw ether AA:BB:CC:DD:EE:FF```
  
  
  
