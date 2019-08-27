@@ -1,8 +1,11 @@
 # Linux
 
-#### CHECKING SELINUX status in LINUX
+### CHECKING SELINUX status in LINUX
+
 ```sestatus```
-#### Disabling SELINUX in LINUX
+
+### Disabling SELINUX in LINUX
+
 To disable SELinux temporarily, issue the command below as root:
 
 ```echo 0 > /selinux/enforce```
@@ -16,7 +19,8 @@ Else, use the Permissive option instead of 0 as below:
 ```setenforce Permissive```
 
 These methods above will only work until the next reboot, therefore to disable SELinux permanently, move to the next section.
-#### DISABLING SELINUX PERMANENTLY 
+
+### DISABLING SELINUX PERMANENTLY 
 
 open the file ```vi /etc/sysconfig/selinux``` 
 
@@ -24,8 +28,9 @@ Then change the directive ```SELinux=enforcing``` to ```SELinux=disabled```
 
 ```SELINUX=disabled```
 
-#### du -shxc --exclude /proc
-#### Disk Space issue
+### du -shxc --exclude /proc
+
+### Disk Space issue
 1. Command du 
 2. Using “-h” option with “du” command provides results in “Human Readable Format“. Means you can see sizes in Bytes, Kilobytes, Megabytes, Gigabytes etc.
 3. To get the summary of a grand total disk usage size of an directory use the option “-s” as follows.
