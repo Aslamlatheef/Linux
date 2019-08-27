@@ -1,5 +1,13 @@
 # Linux
 
+## LINUX BOOT PROCESS
+![BOOTING](https://github.com/Aslamlatheef/Linux/blob/master/IMAGES/Linux-boot-process.png)
+
+
+## POWER ON
+
+
+
 ## NETWORK CONFIGURATION
 
 to check IP Address  VIEW all NETWORK SETTINGS 
