@@ -112,7 +112,8 @@ Then change the directive ```SELinux=enforcing``` to ```SELinux=disabled```
 
 ### du -shxc --exclude /proc
 
-### Disk Space issue
+## Disk Space issue
+
 1. Command du 
 2. Using “-h” option with “du” command provides results in “Human Readable Format“. Means you can see sizes in Bytes, Kilobytes, Megabytes, Gigabytes etc.
 3. To get the summary of a grand total disk usage size of an directory use the option “-s” as follows.
