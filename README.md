@@ -1,5 +1,50 @@
 # Linux
 
+## NETWORK CONFIGURATION
+
+to check IP Address 
+
+VIEW all NETWORK SETTINGS ```ifconfig```
+
+Display Information of All Network Interfaces ```ifconfig -a```
+
+View Network Settings of Specific Interface ```ifconfig eth0```
+
+How to Enable an Network Interface ```ifconfig eth0 up``` ```ifup eth0```
+
+How to Disable an Network Interface ```ifconfig eth0 down``` ```ifdown eth0```
+
+How to Assign a IP Address to Network Interface ```ifconfig eth0 172.16.25.125```
+
+How to Assign a Netmask to Network Interface ```ifconfig eth0 netmask 255.255.255.224```
+
+How to Assign a Broadcast to Network Interface ```ifconfig eth0 netmask 255.255.255.224```
+
+How to Assign a Broadcast to Network Interface ```ifconfig eth0 broadcast 172.16.25.63```
+
+How to Assign a IP, Netmask and Broadcast to Network Interface ```ifconfig eth0 172.16.25.125 netmask 255.255.255.224 broadcast 172.16.25.63```
+
+How to Change MTU for an Network Interface ```ifconfig eth0 mtu 1000 ```
+
+How to Enable Promiscuous Mode ```ifconfig eth0 promisc```
+
+ How to Disable Promiscuous Mode ```ifconfig eth0 -promisc```
+ 
+ How to Add New Alias to Network Interface ```ifconfig eth0:0 172.16.25.127 ``` verify with ```ifconfig eth0:0```
+ 
+ How to Remove Alias to Network Interface ```ifconfig eth0:0 down```
+ 
+ How to Change the MAC address of Network Interface ```ifconfig eth0 hw ether AA:BB:CC:DD:EE:FF```
+ 
+ 
+ 
+
+Network Configuration File 
+	
+RedhaT/CENTOS      ``` /etc/sysconfig/network-scripts/ifcfg-eth0 ```
+
+Ubuntu / DEBIAN    ``` sudo vi /etc/network/interfaces ```
+
 ## SELINUX SETUP
 
 ### CHECKING SELINUX status in LINUX
