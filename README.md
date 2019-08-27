@@ -1,20 +1,28 @@
 # Linux
 
-## Disk Space Issues
+#### CHECKING SELINUX status in LINUX
+```sestatus```
+#### Disabling SELINUX in LINUX
+To disable SELinux temporarily, issue the command below as root:
 
-#### How to add Firewall rule in Linux
+```echo 0 > /selinux/enforce```
 
+Alternatively, you can use the setenforce tool as follows:
 
+```setenforce 0```
 
+Else, use the Permissive option instead of 0 as below:
+ 
+```setenforce Permissive```
 
+These methods above will only work until the next reboot, therefore to disable SELinux permanently, move to the next section.
+#### DISABLING SELINUX PERMANENTLY 
 
+open the file ```vi /etc/sysconfig/selinux``` 
 
+Then change the directive ```SELinux=enforcing``` to ```SELinux=disabled``` 
 
-
-
-
-
-
+```SELINUX=disabled```
 
 #### du -shxc --exclude /proc
 #### Disk Space issue
