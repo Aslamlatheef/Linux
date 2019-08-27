@@ -2,9 +2,7 @@
 
 ## NETWORK CONFIGURATION
 
-to check IP Address 
-
-VIEW all NETWORK SETTINGS ```ifconfig```
+to check IP Address  VIEW all NETWORK SETTINGS ```ifconfig```
 
 Display Information of All Network Interfaces ```ifconfig -a```
 
