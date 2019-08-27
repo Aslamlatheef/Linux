@@ -3,9 +3,35 @@
 ## LINUX BOOT PROCESS
 ![BOOTING](https://github.com/Aslamlatheef/Linux/blob/master/IMAGES/Linux-boot-process.png)
 
+Linux Booting process has 5 stages
 
-## POWER ON
+**PowerON** - BIOS (Basic Input Output System) is a software program comes pre-built in a motherboard chipset and Bios loading
 
+**MBR (MASTER BOOT RECORD)**
+- 512 bytes of space –> MBR
+- MBR contains the information of loader of most operating system e.g UNIX, Linux and WINDOWS
+- MBR holds the small binary information of 1st stage of loader
+- Container Four Partitions (16 Bytes each) + Bootstrap code (446 bytes) + Magic Number or boot signature (Checksum ) 2 bytes
+
+![MBR](https://github.com/Aslamlatheef/Linux/blob/master/IMAGES/mbr-vs-gpt-guide-3.png)
+
+**BootLoader**
+- The boot loader termed from 1st stage loader and loads itself into RAM. All this go on in milliseconds.
+- The default stage 2 boot loader is a GRUB (Grand Unified Boot Loader) or LILO (Linux Loader)
+- Once GRUB is loaded into RAM, then it’s search for the location of Kernel.
+- GRUB will scrutinize the map file to find the kernel image, that is located under (/boot) and load it.
+- GRUB loads the kernel (vmlinuz-version) from /boot partition
+
+**Kernel initialization**
+- initialize CPU components, eg, MMU
+- initialize the scheduler (PID 0)
+- mount the root filesystem in rw mode
+- fork off the init process (PID 1)
+- Start the core system of shared resource managers (RAM, processor and mass storage).
+- Starts a single process, /sbin/init.
+
+**RUN LEVEL INITITION**
+- loading run level of Opeating system
 
 
 ## NETWORK CONFIGURATION
